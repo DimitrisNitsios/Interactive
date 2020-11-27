@@ -1,0 +1,81 @@
+h1{
+	border: 2px solid black;
+	text-align: center;
+	font-family: sans-serif;
+	background-image: linear-gradient(gold, #aa6c39);
+	color: white;
+	padding: 10px;
+	width: 100%;	
+	font-size: 60px;
+	margin-top: 0px;
+	text-shadow: 4px -2px grey;
+}
+
+body {	
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.offersLeft, .offersRight {
+	position: relative;	
+	border: 1px solid black;
+	margin: 15px;
+	border-radius: 20px;
+	max-width: 50%;	
+	max-height: 415px;
+}
+
+.offersRight {		
+	float: right;		
+}
+
+.offersLeft {
+	float: left;
+}
+
+.myNav, .myTextBox {
+	position: relative;
+	top: 20px;
+	clear: both;
+	text-align: center;
+	list-style-type: none;	
+}
+
+a {
+	text-decoration: none;
+}
+
+.myNav {
+	width:90%;
+	left:5%;
+}
+
+ul {
+	border: 1px solid black;
+	border-radius: 20px;
+	padding-left: 0px;
+}
+
+
+li {
+	border-bottom: 1px solid black;
+	padding: 15px;
+	font-size: 40px;	
+}
+
+ul li:last-child {
+	border-bottom: 0px ;
+}
+
+.myTextBox{	
+	left: 7%;
+	width: 86%;	
+	border: 1px solid black;
+	border-radius: 20px;
+	font-size: 30px;
+}
+
+.myNav, .myTextBox, .offersLeft, .offersRight {
+	box-shadow: 5px 10px 20px;	
+}

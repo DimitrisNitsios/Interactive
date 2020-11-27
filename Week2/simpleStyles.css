@@ -1,0 +1,45 @@
+
+h1 {
+	color: black;
+	text-align: center;
+}
+	
+p {
+	font-family: verdana;
+	text-align: justify;
+	text-justify: inter-word;	
+}
+
+.highlight {
+	background-color: yellow;
+}
+
+#firstHeading {
+	text-decoration:underline; 
+}
+
+.myDiv{
+	text-align: left;	
+	float: right;
+}
+
+ul {
+	list-style-type: none;	
+}
+
+li a {
+	color:black;
+    display: block;
+	text-decoration: none;
+    width: 80px;
+    background-color: #bbbbff;
+	border: 1px solid black;
+}
+
+li a:hover {
+    background-color: white;
+}
+
+body {
+	background-color: gainsboro;
+}
