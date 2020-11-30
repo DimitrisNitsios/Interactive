@@ -84,3 +84,49 @@
     bottom: 0;
     z-index: 15;
 }
+
+/* EXTRA */
+.slides {
+    scroll-behavior: smooth;
+    overflow-x: auto;
+}
+
+.slider {
+    width: 100%;
+    height: auto;
+    display: flex;
+    overflow-x: auto;
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+    height: 100%;
+}
+
+.buttonSlide {
+    color: black;
+    background-color: #DB53FB;
+    display: inline-block;
+    font-weight: bold;
+    width: 25px;
+    height: 1.5%;
+    font-size: 25px;
+    border: 1px solid black;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 5% 10px 5%;
+}
+
+.slider p {
+    font-size: large;
+    margin-top: 0px;
+}
+
+
+
+.slides > div:target {
+    transform: scale(0.8);
+}
