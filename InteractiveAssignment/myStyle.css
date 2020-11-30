@@ -4,7 +4,7 @@ body {
     color: #000000;
     margin: 0px;
     padding: 0px;
-    width: 100%;
+    width: 99%;
 }
 
 a {
@@ -254,45 +254,25 @@ input[type=checkbox] {
     width: 100%;
     height: 100%;
     display: none;
+    transition: .4s;
 }
 
 #input1, #input2, #input3 {
     display: none;
 }
 
-.prev, .next label {
-    width: 7%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    background: #E5E4E2;
-    z-index: 3;
-    cursor: pointer;
-}
-
-.prev {
-    left: 0;
-}
-
-.next {
-    right: 0;
-}
-
-#sliderNav {
+#sliderNavButtons {
     width: 100%;
-    height: 11px;
     position: relative;
-    text-align: center;
-    z-index: 99;
+    z-index: 3;
     cursor: default;
     margin-top: 3%;
     margin-bottom: 3%;
 }
 
-.dots {
-    top: -5px;
-    width: 18px;
-    height: 18px;
+.slideButtons {
+    width: 20px;
+    height: 20px;
     margin: 0 5%;
     position: relative;
     border-radius: 100%;
@@ -300,10 +280,17 @@ input[type=checkbox] {
     background-color: rgba(0, 0, 0, 0.6);
     transition: .4s;
     cursor: pointer;
+    border: 1px solid black;
 }
 
 #input1:checked ~ #slide1,
 #input2:checked ~ #slide2,
 #input3:checked ~ #slide3 {
-    display: block  ;
+    display: block;
+}
+
+#input1:checked ~ .slideButtons #button1,
+#input2:checked ~ .slideButtons #button2,
+#input3:checked ~ .slideButtons #button3 {
+    background-color: #E5E4E2; !important;
 }
