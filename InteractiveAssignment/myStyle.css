@@ -8,6 +8,10 @@ body {
     font-family: sans-serif;
 }
 
+label {
+    font-weight: bold;
+}
+
 a {
     text-decoration: none;
 }
@@ -17,22 +21,21 @@ a {
 }
 
 h1 {
-    margin-top: 5px;
+    margin: 5px 0 5px 0;
     font-size: xx-large;
 }
 
 h2 {
-    margin: 5px;
+    margin: 5px 0 5px 0;
     font-size: 25px;
 }
 
 h3 {
     font-size: 22px;
-    margin: 5px;
+    margin: 5px 0 5px 0;
 }
 
 #containerLogo {
-    height: 60px;
     border: solid black;
     border-width: 1px 0 2px 0;
     text-align: center;
@@ -64,7 +67,7 @@ h3 {
 .navBar a {
     float: left;
     color: #ffffff;
-    padding: 15px 15px;
+    padding: 12px 12px;
 }
 
 .navBar a:hover {
@@ -84,9 +87,22 @@ h3 {
     font-size: larger;
     z-index: 5;
 }
+
+span, p {
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 0;
+    font-size: large;
+}
+
+
 /* -----------------------*/
 
-
+.textBox {
+    margin-left: 1%;
+    float: left;
+    width: 50%;
+}
 
 /*    Only HomePage    */
 .lvlContainer label::after {
@@ -161,27 +177,8 @@ input[type=checkbox] {
     display: none;
 }
 
-#goldTable{
+#goldTable, #silverTable, #platinumTable, #familyTable {
     display: none;
-}
-
-#silverTable{
-    display: none;
-}
-
-#platinumTable{
-    display: none;
-}
-
-#familyTable{
-    display: none;
-}
-
-#greetings p {
-    font-size: large;
-    margin-top: 0px;
-    margin-left: 1%;
-    margin-right: 1%;
 }
 
 .inside {
@@ -234,8 +231,7 @@ input[type=checkbox] {
 }
 
 
-/* Slideshow CSS */
-
+/* Slideshow CSS  #1c1c1c #616161*/
 .slideshowContainer {
     margin: 20px auto 0;
     position: relative;
@@ -244,7 +240,7 @@ input[type=checkbox] {
     padding-bottom: 36%;
     user-select: none;
     background-color: #1c1c1c;
-    border: solid 10px #616161;
+    border: solid 8px #616161;
     border-radius:10px ;
     color: #DB53FB;
     text-align: left;
@@ -296,4 +292,39 @@ input[type=checkbox] {
 #input2:checked ~ .slideButtons #button2,
 #input3:checked ~ .slideButtons #button3 {
     background-color: #E5E4E2; !important;
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 350px) {
+    /*    Shared in all pages    */
+    body {
+        background-color: blue;
+    }
+
+     .textBox p, span {
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width: 295px) {
+    /*    Shared in all pages    */
+    body {
+        background-color: red;
+    }
+    p {
+        font-size: medium;
+    }
+    .textBox p, span {
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    /*    Shared in all pages    */
+    body {
+        background-color: gray;
+    }
+    p, span {
+        font-size: 40px;
+    }
 }
