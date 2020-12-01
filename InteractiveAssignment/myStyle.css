@@ -21,18 +21,18 @@ a {
 }
 
 h1 {
-    margin: 5px 0 5px 0;
+    margin: 5px 1% 5px 1%;
     font-size: xx-large;
 }
 
 h2 {
-    margin: 5px 0 5px 0;
+    margin: 5px 1% 5px 1%;
     font-size: 25px;
 }
 
 h3 {
     font-size: 22px;
-    margin: 5px 0 5px 0;
+    margin: 5px 1% 5px 1%;
 }
 
 #containerLogo {
@@ -101,17 +101,17 @@ span, p {
 .textBox {
     margin-left: 1%;
     float: left;
-    width: 50%;
+    width: 67%;
 }
 
 /*    Only HomePage    */
 .lvlContainer label::after {
     display:flex;
     content: "";
-    background-image: url("Images/down.png");
-    background-size: 20px 20px;
+    background-image: url("Images/down3.png");
+    background-size: 20px 15px;
     width: 20px;
-    height: 20px;
+    height: 15px;
     transition: all 0.4s 0.05s;
     transform: rotate(-90deg);
     position: relative;
@@ -146,8 +146,8 @@ span, p {
 }
 
 .lvlContainer {
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
     background-color: #333333;
     border: 2px solid black;
     width: 100%;
@@ -319,12 +319,12 @@ input[type=checkbox] {
     }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 750px) {
     /*    Shared in all pages    */
     body {
         background-color: gray;
     }
     p, span {
-        font-size: 40px;
+        font-size: 38px;
     }
 }
