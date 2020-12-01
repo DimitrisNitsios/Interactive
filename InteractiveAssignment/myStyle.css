@@ -306,25 +306,145 @@ input[type=checkbox] {
     }
 }
 
-@media screen and (max-width: 295px) {
+@media screen and (max-width: 300px) {
     /*    Shared in all pages    */
     body {
         background-color: red;
     }
-    p {
-        font-size: medium;
+    span, p {
+        font-size: 15px;
     }
-    .textBox p, span {
-        font-size: 13px;
+    .slideshowContainer {
+        padding-bottom: 40%;
+    }
+
+}
+
+@media screen and (min-width: 500px) {
+    /*    Shared in all pages    */
+    body {
+        background-color: yellow;
+    }
+    p, span {
+        font-size: 27px;
+    }
+    h1{
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 29px;
+    }
+
+    .navBar {
+        font-size: 29px;
+    }
+
+    .lvlContainer label{
+        font-size: 29px;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    /*    Shared in all pages    */
+    body {
+        background-color: gray;
+    }
+    p, span {
+        font-size: 28px;
+    }
+    h1{
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 33px;
+    }
+
+    h3 {
+        font-size: 31px;
+    }
+
+    .navBar {
+        font-size: 30px;
+    }
+
+    .lvlContainer label{
+        font-size: 30px;
+    }
+
+    #dummyDiv {
+        margin-bottom: 70px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    /*    Shared in all pages    */
+    body {
+        background-color: blue;
+    }
+    p, span {
+        font-size: 30px;
+    }
+    h1{
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    h3 {
+        font-size: 33px;
+    }
+
+    .navBar {
+        font-size: 33px;
+    }
+
+    .lvlContainer label{
+        font-size: 33px;
+    }
+
+    #dummyDiv {
+        margin-bottom: 80px;
     }
 }
 
 @media screen and (min-width: 750px) {
     /*    Shared in all pages    */
     body {
-        background-color: gray;
+        background-color: green;
     }
     p, span {
+        font-size: 35px;
+    }
+    h1{
+        font-size: 43px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
         font-size: 38px;
     }
+
+    .navBar {
+        font-size: 38px;
+    }
+
+    .lvlContainer label{
+        font-size: 38px;
+    }
+
+    #dummyDiv {
+        margin-bottom: 80px;
+    }
 }
+
