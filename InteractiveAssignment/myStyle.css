@@ -524,8 +524,8 @@ audio {
 }
 
 
-/*  Galaxy ford has the smallest width(280px)  */
-@media screen and (max-width: 300px) {
+/*  Galaxy ford has the smallest width (280px)  */
+@media screen and (max-width: 310px) {
     /*    Shared in all pages    */
     span, p {
         font-size: medium;
