@@ -1,4 +1,5 @@
 /*    Shared in all pages    */
+
 body {
     background-color: #FFFFFF;
     color: #000000;
@@ -6,6 +7,10 @@ body {
     padding: 0px;
     width: 100%;
     font-family: sans-serif;
+}
+
+ul {
+    list-style-type: none;
 }
 
 label {
@@ -43,7 +48,7 @@ h3 {
     background-image: linear-gradient( #DB53FB, #000000);
     color: white;
     width: 100%;
-    text-shadow: 3px -2px grey;
+    text-shadow: 2px -2px black;
     margin: 0px;
     position: fixed;
     top: 0;
@@ -67,12 +72,14 @@ h3 {
 .navBar a {
     float: left;
     color: #ffffff;
-    padding: 12px 12px;
+    padding: 2% 5%;
+    text-shadow: 2px -2px black;
 }
 
 .navBar a:hover {
-    background-color: #dddddd;
+    background-color: white;
     color: black;
+    text-shadow: 2px -1px #DB53FB;
 }
 
 .navBar {
@@ -101,11 +108,11 @@ span, p {
 .textBox {
     margin-left: 1%;
     float: left;
-    width: 67%;
+    width: 69%;
 }
 
 /*    Only HomePage    */
-.lvlContainer label::after {
+.collapseContainer label::after {
     display:flex;
     content: "";
     background-image: url("Images/down3.png");
@@ -115,8 +122,8 @@ span, p {
     transition: all 0.4s 0.05s;
     transform: rotate(-90deg);
     position: relative;
-    top: 7px;
-    left: 7px;
+    top: 6px;
+    left: 10px;
 }
 
 #featuredArtists {
@@ -140,12 +147,13 @@ span, p {
     display: table;
 }
 
-.lvlContainer label {
+.collapseContainer label {
     display: inline-flex;
     justify-content: center;
+    cursor: pointer;
 }
 
-.lvlContainer {
+.collapseContainer {
     padding-bottom: 0px;
     padding-top: 0px;
     background-color: #333333;
@@ -153,6 +161,7 @@ span, p {
     width: 100%;
     font-size: x-large;
     margin-bottom: 5px;
+    text-shadow: 2px -2px black;
 }
 
 #goldContainer {
@@ -225,10 +234,163 @@ input[type=checkbox] {
 /* ----------------------------- */
 
 /* Featured Artist Page */
-#artistDetails {
+.artistDetails {
     text-align: justify;
     margin:5%;
 }
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+.row  span{
+    margin: 0 5%;
+}
+
+.row img{
+    width: 80%;
+    min-height: 50%;
+    border: 3px solid black;
+}
+
+.row {
+    margin: 5% 5%;
+    text-align: center;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+#listAlbums {
+    border: 1px solid black;
+    width: 100%;
+}
+
+#featuredTitle {
+    font-style: italic;
+    text-shadow: 2px -1px lightgray;
+}
+
+/* Music List Page */
+
+#genreNav {
+    padding-bottom: 1%;
+    padding-top: 1%;
+    background-color: #333333;
+    border-bottom: 2px solid black;
+    width: 100%;
+    font-size: x-large;
+    margin-bottom: 3%;
+    text-align: left;
+}
+
+li {
+    display: inline-block;
+    border-right: 1px solid white;
+    margin-right: 1%;
+}
+
+li a{
+    color: white;
+}
+li a:visited{
+    color: white;
+}
+
+li a:hover{
+    color: #DB53FB;
+}
+
+ul {
+    border-top: 1px solid white;
+}
+#genrelist {
+    text-align: left;
+    display: none;
+    font-size: medium;
+}
+
+#burgerCheck:checked ~ #genrelist {
+    display: block;
+
+}
+
+#burgerLabel {
+    color: #DB53FB;
+    margin-left: 5%;
+    cursor: pointer;
+}
+
+
+#genreNav input[type=text] {
+    float: right;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.collapseContainer2 {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    background-color: #333333;
+    border-bottom: 2px solid black;
+    width: 100%;
+    font-size: x-large;
+    margin-bottom: 3%;
+
+}
+
+.collapseContainer2 .inside{
+    background-color: white;
+    color: black;
+
+}
+
+.collapseContainer2 a{
+    font-style: italic;
+    text-shadow: 2px -1px black;
+    color: #DB53FB;
+}
+
+.collapseContainer2 a:visited{
+    color: #DB53FB;
+}
+
+.collapseContainer2 a:hover{
+    color: #DB53FB;
+}
+
+
+.collapseContainer2 img{
+    width: 99%;
+    margin: 1% 0 1% 1%;
+    vertical-align: middle;
+}
+
+.collapseContainer2 label{
+    color: #DB53FB;
+    text-shadow: 2px -1px darkgray;
+}
+.collapseContainer2 td {
+    width: 30%;
+    padding-top: 1%;
+    padding-right: 2%;
+    padding-left: 2%;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.collapseContainer2 p{
+    text-shadow: none;
+    display: inline;
+}
+
+
+
 
 
 /* Slideshow CSS  #1c1c1c #616161*/
@@ -240,12 +402,13 @@ input[type=checkbox] {
     padding-bottom: 36%;
     user-select: none;
     background-color: #1c1c1c;
-    border: solid 8px #616161;
+    border: 5px solid #700070;
     border-radius:10px ;
     color: #DB53FB;
     text-align: left;
     font-size: large;
     max-height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .slideContent {
@@ -277,7 +440,6 @@ input[type=checkbox] {
     border-radius: 100%;
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.6);
-    transition: .4s;
     cursor: pointer;
     border: 1px solid black;
 }
@@ -294,99 +456,76 @@ input[type=checkbox] {
     background-color: #E5E4E2; !important;
 }
 
-/* On screens that are 992px or less, set the background color to blue */
-@media screen and (max-width: 350px) {
+/* On screens that are too small  (320px is the smallest width of phones now days) */
+@media screen and (max-width: 340px) {
     /*    Shared in all pages    */
     body {
-        background-color: blue;
+        background-color: white;
     }
 
      .textBox p, span {
         font-size: medium;
     }
-}
-
-@media screen and (max-width: 300px) {
-    /*    Shared in all pages    */
-    body {
-        background-color: red;
+    .navBar {
+        font-size: 18px;
     }
-    span, p {
+
+    .navBar a{
+        padding: 2% 4%;
+    }
+
+    .artistDetails span, .artistDetails p{
         font-size: 15px;
     }
+
+}
+
+
+/*  Galaxy ford has the smallest width(280px)  */
+@media screen and (max-width: 300px) {
+    /*    Shared in all pages    */
+    span, p {
+        font-size: medium;
+    }
+
     .slideshowContainer {
         padding-bottom: 40%;
     }
 
-}
+    .navBar {
+        font-size: 18px;
+    }
 
-@media screen and (min-width: 500px) {
-    /*    Shared in all pages    */
-    body {
-        background-color: yellow;
+    .navBar a{
+        padding: 12px 8px 12px 8px;
     }
-    p, span {
-        font-size: 27px;
-    }
+
     h1{
-        font-size: 35px;
+        font-size: 22px;
     }
 
     h2 {
-        font-size: 32px;
+        font-size: 19px;
     }
 
     h3 {
-        font-size: 29px;
+        font-size: 18px;
     }
 
-    .navBar {
-        font-size: 29px;
-    }
-
-    .lvlContainer label{
-        font-size: 29px;
+    .artistDetails span, .artistDetails p{
+        font-size: 15px;
     }
 }
 
-@media screen and (min-width: 650px) {
-    /*    Shared in all pages    */
-    body {
-        background-color: gray;
-    }
-    p, span {
-        font-size: 28px;
-    }
-    h1{
-        font-size: 36px;
-    }
-
-    h2 {
-        font-size: 33px;
-    }
-
-    h3 {
-        font-size: 31px;
-    }
-
-    .navBar {
-        font-size: 30px;
-    }
-
-    .lvlContainer label{
-        font-size: 30px;
-    }
-
-    #dummyDiv {
-        margin-bottom: 70px;
+@media screen and (min-width: 450px) and (max-width: 700px){
+    .navBar a{
+        padding: 2% 8%;
     }
 }
 
-@media screen and (min-width: 700px) {
+/*    Tablets  and larger devices   */
+@media screen and (min-width: 700px) and (min-height: 550px) {
     /*    Shared in all pages    */
-    body {
-        background-color: blue;
-    }
     p, span {
         font-size: 30px;
     }
@@ -406,7 +545,7 @@ input[type=checkbox] {
         font-size: 33px;
     }
 
-    .lvlContainer label{
+    .collapseContainer label, .collapseContainer2 label, #genreNav label{
         font-size: 33px;
     }
 
@@ -415,11 +554,8 @@ input[type=checkbox] {
     }
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 750px) and (min-height: 550px){
     /*    Shared in all pages    */
-    body {
-        background-color: green;
-    }
     p, span {
         font-size: 35px;
     }
@@ -439,12 +575,18 @@ input[type=checkbox] {
         font-size: 38px;
     }
 
-    .lvlContainer label{
+    .collapseContainer label, .collapseContainer2 label, #genreNav label{
         font-size: 38px;
     }
 
     #dummyDiv {
         margin-bottom: 80px;
+    }
+}
+
+@media screen and (min-width: 850px) and (min-height: 550px){
+    .navBar a{
+        padding: 12px 8%;
     }
 }
 

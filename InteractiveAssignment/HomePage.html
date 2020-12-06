@@ -15,10 +15,12 @@
     </head>
 
     <body>
+        <!--  Logo  -->
         <div id="containerLogo">
             <h1>Tempo Muse</h1>
         </div>
 
+        <!--  Main body  -->
         <div class="main">
             <!--  Welcoming message -->
             <div id="greetings">
@@ -29,43 +31,50 @@
             <!--  Featured Artists  -->
             <h2>Featured artists :</h2>
             <div class="slideshowContainer">
+                <!--  Hidden radio buttons for the slideshow  -->
                 <input type="radio" id="input1" name="images" checked/>
                 <input type="radio" id="input2" name="images" />
                 <input type="radio" id="input3" name="images" />
 
+                <!--  Featured Artist 1 -->
                 <div class="slideContent" id="slide1">
                     <img src="Images/monarchy-album.jpg" alt="" class="artistImg">
                     <div class="textBox">
                         <p>Monarchy 1 is an amazing artist</p>
-                        <span><a href="Featured.html">Click for more information</a></span>
+                        <span><a href="Featured.html">Click here to see more</a></span>
                     </div>
                 </div>
 
+                <!--  Featured Artist 2  -->
                 <div class="slideContent" id="slide2">
-                    <img src="Images/monarchy-album.jpg" alt="" class="artistImg">
+                    <img src="Images/monarchy-ES.jpg" alt="" class="artistImg">
                     <div class="textBox">
                         <p>Monarchy 2 is an amazing artist</p>
-                        <span><a href="Featured.html">Click for more information</a></span>
+                        <span><a href="Featured.html">Click here to see more</a></span>
                     </div>
                 </div>
 
+                <!--  Featured Artist 3  -->
                 <div class="slideContent" id="slide3">
-                    <img src="Images/monarchy-album.jpg" alt="" class="artistImg">
+                    <img src="Images/monarchy-DE.jpg" alt="" class="artistImg">
                     <div class="textBox">
-                        <p>Monarchy  is an amazing artist</p>
+                        <p>Monarchy 3 is an amazing artist</p>
                         <span><a href="Featured.html">Click here to see more</a></span>
                     </div>
                 </div>
             </div>
 
+            <!--  Labels fot the input   -->
             <div id="sliderNavButtons">
                 <label for="input1" class="slideButtons" id="button1">1</label>
                 <label for="input2" class="slideButtons" id="button2">2</label>
                 <label for="input3" class="slideButtons" id="button3">3</label>
             </div>
             <br>
+
             <!--  Offers -->
-            <div id="goldContainer" class="lvlContainer">
+            <!--  Gold  -->
+            <div id="goldContainer" class="collapseContainer">
                 <input id="goldCheck" type="checkbox">
                 <label for="goldCheck">Gold Level </label>
                 <div id="goldTable">
@@ -75,7 +84,8 @@
                 </div>
             </div>
 
-            <div id="silverContainer" class="lvlContainer">
+            <!--  silver  -->
+            <div id="silverContainer" class="collapseContainer">
                 <input id="silverCheck" type="checkbox">
                 <label for="silverCheck" >Silver Level</label>
                 <div id="silverTable">
@@ -85,7 +95,8 @@
                 </div>
             </div>
 
-            <div id="platinumContainer" class="lvlContainer">
+            <!-- platinum  -->
+            <div id="platinumContainer" class="collapseContainer">
                 <input id="platinumCheck" type="checkbox">
                 <label for="platinumCheck" >Platinum Level</label>
                 <div id="platinumTable">
@@ -95,7 +106,8 @@
                 </div>
             </div>
 
-            <div id="familyContainer" class="lvlContainer">
+            <!--  family  -->
+            <div id="familyContainer" class="collapseContainer">
                 <input id="familyCheck" type="checkbox">
                 <label for="familyCheck" >Family Pack</label>
                 <div id="familyTable">
@@ -114,9 +126,9 @@
         <!-- Navigation bar menu that has links to other pages -->
         <nav class="navBar">
             <a href="HomePage.html">Home</a>
-            <a href="MusicSelect.html">Music Selection</a>
+            <a href="MusicSelect.html">Music List</a>
+            <a href="About.html">About Us</a>
         </nav>
-
     </body>
 
 </html>
