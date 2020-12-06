@@ -1,12 +1,15 @@
 /*    Shared in all pages    */
-
 body {
     background-color: #FFFFFF;
     color: #000000;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     width: 100%;
-    font-family: sans-serif;
+    font-family: Verdana, Helvetica, sans-serif;
+}
+
+#dummyDiv img{
+    width: 5%
 }
 
 ul {
@@ -56,7 +59,7 @@ h3 {
     text-align: center;
     clear: both;
     list-style-type: none;
-    margin-top: 5%;
+    margin-top: 2%;
     overflow: hidden;
 }
 
@@ -69,7 +72,7 @@ h3 {
 .navBar a {
     float: left;
     color: #ffffff;
-    padding: 2% 5%;
+    padding: 2% 4%;
     text-shadow: 2px -2px black;
 }
 
@@ -79,7 +82,8 @@ h3 {
     text-shadow: 2px -1px #DB53FB;
 }
 
-.navBar {
+
+.navBar  {
     background-image: linear-gradient( #DB53FB, #000000);
     position: fixed;
     bottom: 0;
@@ -88,25 +92,22 @@ h3 {
     border: 1px solid black;
     width: 100%;
     font-weight: bold;
-    font-size: larger;
+    font-size: large;
     z-index: 5;
 }
 
 span, p {
-    margin-left: 1%;
-    margin-right: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
     margin-top: 0;
     font-size: large;
 }
 
 
+
 /* -----------------------*/
 
-.textBox {
-    margin-left: 1%;
-    float: left;
-    width: 69%;
-}
+
 
 /*    Only HomePage    */
 .collapseContainer label::after {
@@ -126,6 +127,12 @@ span, p {
 #featuredArtists {
     margin-bottom: 5px;
     width: 100%;
+}
+
+.textBox {
+    margin-left: 1%;
+    float: left;
+    width: 69%;
 }
 
 .artist {
@@ -230,6 +237,7 @@ input[type=checkbox] {
 }
 /* ----------------------------- */
 
+
 /* Featured Artist Page */
 .artistDetails {
     text-align: justify;
@@ -272,8 +280,14 @@ input[type=checkbox] {
     font-style: italic;
     text-shadow: 2px -1px lightgray;
 }
+/* ------------------------- */
+
 
 /* Music List Page */
+
+#greetings img {
+    width: 50%;
+}
 
 #genreNav {
     padding-bottom: 1%;
@@ -287,7 +301,6 @@ input[type=checkbox] {
 }
 
 li {
-    border-right: 1px solid white;
     margin-top: 3%;
 }
 
@@ -386,12 +399,41 @@ ul {
     text-shadow: none;
     display: inline;
 }
+/* -------- */
 
 
 
+/* Album details page*/
+#musicTracksInfo {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    background-color: #333333;
+    border-bottom: 3px solid black;
+    width: 100%;
+    font-size: x-large;
+    margin-bottom: 3%;
+    color: #DB53FB;
+}
+
+#musicTracksInfo h2 {
+    padding-top: 3%;
+}
+
+#audioList p {
+    margin-bottom: 1%;
+}
+
+#musicTracksInfo img{
+    width: 50%;
+}
+
+audio {
+    max-width: 95%;
+}
 
 
-/* Slideshow CSS  #1c1c1c #616161*/
+/* Slideshow CSS  #1c1c1c #700070 colors */
+
 .slideshowContainer {
     margin: 20px auto 0;
     position: relative;
@@ -454,6 +496,9 @@ ul {
     background-color: #E5E4E2; !important;
 }
 
+
+/* Media queries */
+
 /* On screens that are too small  (320px is the smallest width of phones now days) */
 @media screen and (max-width: 340px) {
     /*    Shared in all pages    */
@@ -469,7 +514,7 @@ ul {
     }
 
     .navBar a{
-        padding: 2% 4%;
+        padding: 2% 3%;
     }
 
     .artistDetails span, .artistDetails p{
@@ -491,11 +536,12 @@ ul {
     }
 
     .navBar {
-        font-size: 18px;
+        font-size: 17px;
     }
 
     .navBar a{
-        padding: 12px 8px 12px 8px;
+        padding: 2% 2%;
+
     }
 
     h1{
@@ -517,7 +563,7 @@ ul {
 
 @media screen and (min-width: 450px) and (max-width: 700px){
     .navBar a{
-        padding: 2% 8%;
+        padding: 2% 7%;
     }
 }
 
@@ -570,7 +616,7 @@ ul {
     }
 
     .navBar {
-        font-size: 38px;
+        font-size: 37px;
     }
 
     .collapseContainer label, .collapseContainer2 label, #genreNav label{
@@ -582,7 +628,7 @@ ul {
     }
 }
 
-@media screen and (min-width: 850px) and (min-height: 550px){
+@media screen and (min-width: 800px) and (min-height: 550px){
     .navBar a{
         padding: 12px 8%;
     }
