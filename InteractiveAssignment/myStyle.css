@@ -493,7 +493,7 @@ audio {
 #input1:checked ~ .slideButtons #button1,
 #input2:checked ~ .slideButtons #button2,
 #input3:checked ~ .slideButtons #button3 {
-    background-color: #E5E4E2; !important;
+    background-color: #E5E4E2;
 }
 
 
@@ -556,6 +556,9 @@ audio {
         font-size: 18px;
     }
 
+    #genreNav {
+        font-size: large;
+    }
     .artistDetails span, .artistDetails p{
         font-size: 15px;
     }
